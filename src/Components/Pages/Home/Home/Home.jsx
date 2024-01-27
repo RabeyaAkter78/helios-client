@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-gray-100'>
             <h1>this is home</h1>
         </div>
     );

@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom";
 import "./Navbar.css"
-
+import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-gray-800 text-yellow-500 p-4">
+            <nav className=" text-black p-4">
                 <div className="flex items-center justify-between">
                     {/* Icon, Search Bar, and Location Section (8/12 width) */}
                     <div className=" flex  mx-4 ">
                         <div className="">
-                            <span className="text-white text-2xl h-48 w-48">Icon</span>
+                            <span className=" text-2xl h-48 w-48">Icon</span>
                         </div>
                         <div className="navbar-end w-1/5 border-r border-gray-400 mx-2 px-6">
 
@@ -18,25 +17,17 @@ const Navbar = () => {
                         {/* Search BAr */}
                         <div className="relative flex items-center searchBar px-2 gap-8">
                             <div className=" ">
-                                {/* Search Icon */}
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5 text-yellow-500"
-
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M13.742 12.344a8.5 8.5 0 111.415-1.415l3.85 3.85a1 1 0 11-1.415 1.415l-3.85-3.85zM2 8.5a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
+                                {/* Icon Of Search */}
+                                <FaSearch></FaSearch>
                             </div>
-                            {/* Search Text Input */}
-                           <div className="top-1/2 transform -translate-y-0.5 ">
-                           <p className=" w-96  rounded-xl">
-                              search here
-                            </p>
-                           </div>
+                            {/* Search Text */}
+                            <div className="top-1/2 transform -translate-y-0.5 ">
+                                <input
+                                    type="text"
+                                    placeholder="Search for resturants,food or product."
+                                    className="w-96 rounded-xl text-xl font-semibold text-gray-400  border-none border-transparent focus:outline-none focus:border-none"
+                                />
+                            </div>
                             {/* Search Button */}
                             <button className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-yellow-300 px-4 py-3 rounded-xl text-gray-800">
                                 Search
@@ -57,7 +48,7 @@ const Navbar = () => {
                     <div className="w-2/12"></div>
 
                     {/* Language Dropdown Section (2/12 width) */}
-                    <div className="w-2/12 text-white">
+                    <div className="w-2/12 ">
                         <p>language</p>
                     </div>
 
@@ -65,7 +56,7 @@ const Navbar = () => {
                     <div className="w-2/12"></div>
 
                     {/* Login Section (2/12 width) */}
-                    <div className="w-2/12 text-white">
+                    <div className="w-2/12 ">
                         <span>Login</span>
                     </div>
                 </div>
