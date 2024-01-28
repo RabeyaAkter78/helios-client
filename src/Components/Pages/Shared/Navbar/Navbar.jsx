@@ -9,11 +9,11 @@ const Navbar = () => {
                     {/* Icon, Search Bar, and Location Section (8/12 width) */}
                     <div className=" flex gap-4 mx-4 ">
                         <div className="">
-                                <img className="h-[40px] w-[48px] rounded" src="https://global.discourse-cdn.com/business7/uploads/shapr3d/original/2X/e/e7bd5f9252ae42e60ec18c0b573a28e138e5574d.png" alt="Logo" />
+                                <img className="h-[40px] w-[70px] rounded" src="https://global.discourse-cdn.com/business7/uploads/shapr3d/original/2X/e/e7bd5f9252ae42e60ec18c0b573a28e138e5574d.png" alt="Logo" />
                         </div>
-                        {/* <div className="navbar-end w-1/5 border-r border-gray-400 mx-2">
+                        <div className="navbar-end w-1/5 border-r border-gray-400 mx-2">
 
-                        </div> */}
+                        </div> 
                         {/* Search BAr */}
                         <div className="relative flex items-center searchBar px-2 gap-8">
                             <div className=" ">
