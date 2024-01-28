@@ -4,16 +4,16 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className=" text-black p-4">
+            <nav className="navbar text-black p-4 flex">
                 <div className="flex items-center justify-between">
                     {/* Icon, Search Bar, and Location Section (8/12 width) */}
-                    <div className=" flex  mx-4 ">
+                    <div className=" flex gap-4 mx-4 ">
                         <div className="">
-                            <span className=" text-2xl h-48 w-48">Icon</span>
+                                <img className="h-[40px] w-[48px] rounded" src="https://global.discourse-cdn.com/business7/uploads/shapr3d/original/2X/e/e7bd5f9252ae42e60ec18c0b573a28e138e5574d.png" alt="Logo" />
                         </div>
-                        <div className="navbar-end w-1/5 border-r border-gray-400 mx-2 px-6">
+                        {/* <div className="navbar-end w-1/5 border-r border-gray-400 mx-2">
 
-                        </div>
+                        </div> */}
                         {/* Search BAr */}
                         <div className="relative flex items-center searchBar px-2 gap-8">
                             <div className=" ">
@@ -34,31 +34,21 @@ const Navbar = () => {
                             </button>
                         </div>
 
-
-                        <div className="w-4/12">
+                        {/* Address Section */}
+                        <div className="w-80">
                             <input
                                 type="text"
                                 placeholder="Location"
-                                className="w-full p-2 rounded-md mx-2"
+                                className="w-full p-3 h- rounded-md mx-2  bg-slate-200 border-none border-transparent focus:outline-none focus:border-none"
                             />
                         </div>
                     </div>
-
-                    {/* Space (2/12 width) */}
-                    <div className="w-2/12"></div>
-
-                    {/* Language Dropdown Section (2/12 width) */}
-                    <div className="w-2/12 ">
-                        <p>language</p>
-                    </div>
-
-                    {/* Space (2/12 width) */}
-                    <div className="w-2/12"></div>
-
-                    {/* Login Section (2/12 width) */}
-                    <div className="w-2/12 ">
-                        <span>Login</span>
-                    </div>
+                </div>
+                <div className="navbar-end gap-4">
+                    <button className="btn btn-ghost ">Language</button>
+                    <button className="btn btn-ghost ">
+                        Login
+                    </button>
                 </div>
             </nav>
 
