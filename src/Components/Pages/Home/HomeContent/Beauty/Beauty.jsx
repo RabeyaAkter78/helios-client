@@ -4,7 +4,7 @@ const Beauty = () => {
     const [beauties, setBeauties] = useState([])
 
     useEffect(() => {
-        fetch('beauties.json')
+        fetch('beauty.json')
             .then(res => res.json())
             .then(data => {
                 setBeauties(data);
@@ -23,7 +23,7 @@ const Beauty = () => {
                 {
                     beauties.map(beauty => <div key={beauty._id}
                     >
-                        <div className="card w-60 h-80 bg-base-100 shadow-xl">
+                        <div className="card w-56 h-80 bg-base-100 shadow-xl">
                             <figure><img src={beauty.productImage} alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
