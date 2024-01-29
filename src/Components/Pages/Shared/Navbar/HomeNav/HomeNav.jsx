@@ -13,6 +13,7 @@ const HomeNav = () => {
                         type="text"
                         className="w-full p-3 h- rounded-md mx-2  bg-white border-none border-transparent focus:outline-none focus:border-none"
                     />
+                    
                 </div>
             </div>
 
@@ -26,9 +27,10 @@ const HomeNav = () => {
                     <div className=" top-1/2 transform -translate-y-0.5 ">
                         <input
                             type="text"
-                            placeholder=""
-                            className="h-11 w-72 rounded-xl text-xl font-semibold text-gray-400  border-none border-transparent focus:outline-none focus:border-none bg-transparent"
+                            placeholder="Search Here"
+                            className="h-11 w-72 p-2 rounded-xl text-xl font-semibold text-gray-400  border-none border-transparent focus:outline-none focus:border-none bg-transparent"
                         />
+                       
                     </div>
 
 
@@ -44,7 +46,7 @@ const HomeNav = () => {
             <div className="navbar-end">
 
                 <Link to={"login"}>
-                    <button className="btn btn-ghost ">
+                    <button className="btn btn-ghost bg-slate-200">
                         Login
                     </button>
                 </Link>
