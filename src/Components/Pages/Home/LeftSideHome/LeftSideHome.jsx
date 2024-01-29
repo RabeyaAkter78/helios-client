@@ -1,6 +1,7 @@
 import { MdOutlineWatchLater } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -25,8 +26,8 @@ const LeftSideHome = () => {
         </div>
         <p className="font-semibold">Service fee
           149 ₸</p>
-       <div className="flex justify-center items-center gap-2">
-       <p className="font-semibold">О доставке  </p>
+       <div className="flex justify-center items-center gap-1 hover:text-red-500">
+       <Link to="" className="font-semibold hover:text-red-500">О доставке  </Link>
         <FaArrowAltCircleRight></FaArrowAltCircleRight>
        </div>
       </div>

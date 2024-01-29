@@ -1,5 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import "./HomeNav.css"
+import { Link } from "react-router-dom";
 const HomeNav = () => {
     return (
         <div className="navbar bg-slate-50 z-10 fixed">
@@ -42,9 +43,11 @@ const HomeNav = () => {
             </div>
             <div className="navbar-end">
 
-                <button className="btn btn-ghost ">
-                    Login
-                </button>
+                <Link to={"login"}>
+                    <button className="btn btn-ghost ">
+                        Login
+                    </button>
+                </Link>
             </div>
 
         </div>

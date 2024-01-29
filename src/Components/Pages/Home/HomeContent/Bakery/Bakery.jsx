@@ -17,7 +17,7 @@ const Bakery = () => {
 
         <div >
             <div className='flex gap-2 items-center p-4 mb-8'>
-                <img className='h-10 w-8' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfa0PLxQVz9e7_Xxi8R3QApNAkbZKeOgu-aw&usqp=CAU" alt="" />
+                <img className='h-10 w-8' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TLR6CQYPanLScgMqsGsrx1ohR2-fRQbcEA&usqp=CAU" alt="" />
                 <h1 className='font-bold text-2xl' >Bakery</h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 py-5 gap-12">
@@ -31,7 +31,7 @@ const Bakery = () => {
                                 <h2 className="card-title">
                                     {bakery.productName}
                                 </h2>
-                                <p>{bakery.productPrice}</p>
+                                <p className="font-bold">{bakery.productPrice} ₸</p>
                             </div>
                             <button className="btn btn-ghost bg-slate-200"><FaPlus></FaPlus></button>
                         </div>
