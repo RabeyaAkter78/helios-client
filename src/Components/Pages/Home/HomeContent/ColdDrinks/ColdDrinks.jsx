@@ -16,16 +16,16 @@ const ColdDrinks = () => {
     return (
 
         <div >
-            <div className='flex gap-2 items-center p-4 mb-8'>
+            <div className='flex gap-2 items-center p-2 mb-8'>
                 <img className='h-10 w-8' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfa0PLxQVz9e7_Xxi8R3QApNAkbZKeOgu-aw&usqp=CAU" alt="" />
                 <h1 className='font-bold text-2xl' >Cold drinks</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 py-5 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 py-5 gap-2">
 
                 {
                     drinks.map(drink => <div key={drink._id}
                     >
-                        <div className="card w-60 h-80 bg-base-100 shadow-xl">
+                        <div className="card w-56 h-80 bg-base-100 shadow-xl">
                             <figure><img src={drink.productImage} alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">

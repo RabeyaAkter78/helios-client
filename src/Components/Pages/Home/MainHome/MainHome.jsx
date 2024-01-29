@@ -10,12 +10,12 @@ const MainHome = () => {
    
 
     return (
-        <>
+        <div className="overflow-x-hidden">
           <ColdDrinks></ColdDrinks>
           <Bakery></Bakery>
           <HotDogs></HotDogs>
           <Beauty></Beauty>
-        </>
+        </div>
     );
 };
 
