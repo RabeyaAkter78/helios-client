@@ -1,5 +1,6 @@
 import { MdOutlineWatchLater } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 
@@ -22,6 +23,12 @@ const LeftSideHome = () => {
           <p>на первый заказ бесплатно от
             1  000 ₸</p>
         </div>
+        <p className="font-semibold">Service fee
+          149 ₸</p>
+       <div className="flex justify-center items-center gap-2">
+       <p className="font-semibold">О доставке  </p>
+        <FaArrowAltCircleRight></FaArrowAltCircleRight>
+       </div>
       </div>
 
       <div className="flex flex-col justify-start items-start  p-2 gap-2">

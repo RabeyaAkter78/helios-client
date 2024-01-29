@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 import "./HomeNav.css"
 const HomeNav = () => {
     return (
-        <div className="navbar">
+        <div className="navbar bg-slate-50 z-10 fixed">
             <div className="navbar-start">
                 <div className="border-r border-gray-500 px-6">
                     <img className="h-[40px] w-[60px] rounded" src="https://global.discourse-cdn.com/business7/uploads/shapr3d/original/2X/e/e7bd5f9252ae42e60ec18c0b573a28e138e5574d.png" alt="Logo" />
